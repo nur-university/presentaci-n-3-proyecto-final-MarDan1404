@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CrowFunNur - Crear proyecto</title>
+
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+    <link rel="stylesheet" href="../../css/form-project.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a class="logo" href="home.html">CrowFun<span>Nur</span></a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="menu-btn" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="nav">
+                <a href="user-projects.html">Explorar Proyectos</a>
+                <a href="home.html" class="nav-active">Mis Proyectos</a>
+                <a href="user-saved.html">Proyectos Guardados</a>
+                <a href="user-contributions.html">Mis Aportes</a>
+                <span class="nav-username">Usuario Demo</span>
+                <a href="logout.html" class="nav-logout">Cerrar sesión</a>
+            </nav>
+        </div>
+
+        <div class="container search-container">
+            <form class="search-form" action="#" method="get">
+                <input type="text" name="q" class="search-input" placeholder="Buscar en mis proyectos..." />
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section class="section project-form-page">
+            <div class="container">
+                <div class="project-form-card">
+                    <h1>Formulario de Proyecto</h1>
+                    <p class="project-form-subtitle">
+                        Completa la información para crear tu campaña. Podrás editarla antes de enviarla a revisión.
+                    </p>
+
+                    <form class="project-form" action="#" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="title">Título del proyecto</label>
+                            <input type="text" id="title" name="title"
+                                placeholder="Ej: Laboratorio de Ciencia Móvil para Escuelas Rurales" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="category">Categoría</label>
+                            <select id="category" name="category" required>
+                                <option value="">Selecciona una categoría</option>
+                                <option value="educacion">Educación</option>
+                                <option value="comunidad">Comunidad</option>
+                                <option value="tecnologia">Tecnología</option>
+                                <option value="salud">Salud</option>
+                                <option value="emprendimiento">Emprendimiento</option>
+                                <option value="medioambiente">Medio ambiente</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Descripción</label>
+                            <textarea id="description" name="description" rows="5"
+                                placeholder="Describe el objetivo del proyecto, a quién beneficia y cómo se utilizarán los fondos."
+                                required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="goal">Meta de recaudación (USD)</label>
+                            <input type="number" id="goal" name="goal" min="1" placeholder="Ej: 10000" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="deadline">Fecha límite</label>
+                            <input type="date" id="deadline" name="deadline" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cover_image">
+                                Imagen principal del proyecto
+                            </label>
+                            <div class="upload-box">
+                                <p class="upload-text">
+                                    Sube una imagen representativa del proyecto.
+                                    Formatos permitidos: JPG, PNG. Esta imagen se mostrará en la tarjeta pública.
+                                </p>
+                                <input type="file" id="cover_image" name="cover_image" accept="image/*" required />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="support_files">
+                                Documentos de respaldo (opcional)
+                            </label>
+                            <div class="upload-box">
+                                <p class="upload-text">
+                                    Puedes adjuntar documentos o imágenes adicionales que respalden tu proyecto
+                                    (presupuestos, permisos, cartas, etc.).
+                                </p>
+                                <input type="file" id="support_files" name="support_files" multiple />
+                            </div>
+                        </div>
+
+                        <div class="project-form-actions">
+                            <button type="submit" class="btn-primary">
+                                Guardar proyecto
+                            </button>
+                            <a href="home.html" class="btn-outline btn-cancel">
+                                Cancelar
+                            </a>
+                        </div>
+
+                        <p class="project-form-note">
+                            Al guardar, tu proyecto quedará como <strong>Borrador</strong> dentro de “Mis Proyectos”.
+                            Podrás revisarlo y luego enviarlo a revisión para que sea publicado.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2025 CrowFunNur. Todos los derechos reservados.</p>
+            <p class="footer-links">
+                <a href="index.html#como-funciona">Cómo Funciona</a>
+                <span>|</span>
+                <a href="index.html#contacto">Contacto</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

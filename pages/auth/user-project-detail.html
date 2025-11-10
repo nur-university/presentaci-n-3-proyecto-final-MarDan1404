@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CrowFunNur - Detalle de mi proyecto</title>
+
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+    <link rel="stylesheet" href="../../css/user-project-detail.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">CrowFun<span>Nur</span></div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="menu-btn" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="nav">
+                <a href="user-projects.html">Explorar Proyectos</a>
+                <a href="home.html" class="nav-active">Mis Proyectos</a>
+                <a href="user-saved.html">Proyectos Guardados</a>
+                <a href="user-contributions.html">Mis Aportes</a>
+                <span class="nav-username">Usuario Demo</span>
+                <a href="logout.html" class="nav-logout">Cerrar sesión</a>
+            </nav>
+        </div>
+
+        <div class="container search-container">
+            <form class="search-form" action="#" method="get">
+                <input type="text" name="q" class="search-input" placeholder="Buscar en mis proyectos..." />
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section class="section user-project-detail-page">
+            <div class="container user-project-detail-layout">
+                <aside class="user-sidebar">
+                    <a href="user-projects.html">Explorar Proyectos</a>
+                    <a href="home.html" class="active">Mis Proyectos</a>
+                    <a href="user-saved.html">Proyectos Guardados</a>
+                    <a href="user-contributions.html">Mis Aportes</a>
+                </aside>
+
+                <section class="user-project-detail">
+                    <nav class="upd-breadcrumb">
+                        <a href="home.html">Mis Proyectos</a>
+                        <span>/</span>
+                        <span>Cocina Comunitaria “Manos Unidas”</span>
+                    </nav>
+
+                    <header class="upd-header">
+                        <div>
+                            <h1>Cocina Comunitaria “Manos Unidas”</h1>
+                            <p class="upd-subtitle">
+                                Campaña para sostener una cocina comunitaria que brinda almuerzos diarios
+                                a familias del barrio La Esperanza.
+                            </p>
+                        </div>
+                        <div class="upd-status">
+                            <span class="status-badge status-active">Activo</span>
+                        </div>
+                    </header>
+
+                    <div class="upd-state-banner">
+                        Este proyecto está <strong>publicado y recibiendo aportes</strong>.
+                        Puedes revisar el avance, pausar la campaña o editar información no crítica.
+                    </div>
+
+                    <div class="upd-main-layout">
+                        <div class="upd-main">
+                            <div class="upd-cover">
+                                <img src="../../img/cocina-comunitaria.jpg" alt="Cocina Comunitaria Manos Unidas" />
+                            </div>
+
+                            <section class="upd-section">
+                                <h2>Descripción del proyecto</h2>
+                                <p>
+                                    La cocina comunitaria “Manos Unidas” funciona desde 2023 brindando
+                                    almuerzos de lunes a viernes a familias en situación de vulnerabilidad.
+                                    El objetivo de esta campaña es asegurar la compra de alimentos, gas,
+                                    utensilios básicos y elementos de higiene por los próximos seis meses.
+                                </p>
+                                <p>
+                                    El equipo está compuesto por voluntarios del barrio y referentes de
+                                    organizaciones sociales locales. Cada aporte contribuye directamente
+                                    a mantener el servicio activo y transparente.
+                                </p>
+                            </section>
+
+                            <section class="upd-section">
+                                <h2>Objetivos específicos</h2>
+                                <ul>
+                                    <li>Garantizar al menos 80 raciones diarias durante 6 meses.</li>
+                                    <li>Mejorar el equipamiento de cocina para optimizar la producción.</li>
+                                    <li>Incorporar talleres de alimentación saludable para las familias.</li>
+                                </ul>
+                            </section>
+
+                            <section class="upd-section">
+                                <h2>Actualizaciones recientes</h2>
+                                <ul class="upd-updates">
+                                    <li>
+                                        <span class="upd-update-date">10/03/2025:</span>
+                                        Se incorporó un nuevo horno industrial donado por comercios locales.
+                                    </li>
+                                    <li>
+                                        <span class="upd-update-date">02/03/2025:</span>
+                                        Alcanzado el 60% de la meta. Se compartió reporte parcial con facturas.
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+
+                        <aside class="upd-sidebar">
+                            <div class="upd-summary-card">
+                                <h2>Resumen de la campaña</h2>
+
+                                <div class="upd-summary-numbers">
+                                    <div>
+                                        <span class="summary-label">Recaudado</span>
+                                        <span class="summary-value">$8,000</span>
+                                    </div>
+                                    <div>
+                                        <span class="summary-label">Meta</span>
+                                        <span class="summary-value">$10,000</span>
+                                    </div>
+                                </div>
+
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 80%;"></div>
+                                </div>
+
+                                <p class="summary-extra">
+                                    80% completado · 12 días restantes · 120 aportantes
+                                </p>
+
+                                <div class="upd-actions">
+                                    <a href="form-project.html" class="btn-primary full-width">
+                                        Editar proyecto
+                                    </a>
+                                    <button type="button" class="btn-ghost full-width">
+                                        Pausar campaña
+                                    </button>
+                                    <button type="button" class="btn-ghost full-width">
+                                        Ver listado de aportes
+                                    </button>
+                                </div>
+
+                                <p class="upd-note">
+                                    Algunas acciones (como pausar o cerrar la campaña) pueden requerir
+                                    revisión del administrador según las reglas de la plataforma.
+                                </p>
+                            </div>
+
+                            <div class="upd-summary-card">
+                                <h3>Información interna</h3>
+                                <p class="summary-muted">
+                                    ID de proyecto (simulado): <strong>CFN-2025-0012</strong><br />
+                                    Estado de revisión: <strong>Aprobado</strong><br />
+                                    Tipo de campaña: <strong>Todo o nada</strong>
+                                </p>
+                            </div>
+                        </aside>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2025 CrowFunNur. Todos los derechos reservados.</p>
+            <p class="footer-links">
+                <a href="index.html#como-funciona">Cómo Funciona</a>
+                <span>|</span>
+                <a href="index.html#contacto">Contacto</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

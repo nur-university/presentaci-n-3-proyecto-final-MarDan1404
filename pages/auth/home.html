@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CrowFunNur - Mis Proyectos</title>
+
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+    <link rel="stylesheet" href="../../css/home.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a class="logo" href="#">CrowFun<span>Nur</span></a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="menu-btn" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="nav">
+                <a href="user-projects.html">Explorar Proyectos</a>
+                <a href="#" class="nav-active">Mis Proyectos</a>
+                <a href="user-saved.html">Proyectos Guardados</a>
+                <a href="user-contributions.html">Mis Aportes</a>
+                <span class="nav-username">Usuario Demo</span>
+                <a href="logout.html" class="nav-logout">Cerrar sesión</a>
+            </nav>
+        </div>
+
+        <div class="container search-container">
+            <form class="search-form" action="#" method="get">
+                <input type="text" name="q" class="search-input" placeholder="Buscar en mis proyectos..." />
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section class="section user-home">
+            <div class="container user-layout">
+                <aside class="user-sidebar">
+                    <a href="#" class="active">Mis Proyectos</a>
+                    <a href="user-saved.html">Proyectos Guardados</a>
+                    <a href="user-contributions.html">Mis Aportes</a>
+                </aside>
+
+                <section class="user-content">
+                    <div class="user-content-header">
+                        <h1>Mis Proyectos</h1>
+                        <a href="form-project.html" class="btn-primary btn-create">
+                            Crear nuevo proyecto
+                        </a>
+                    </div>
+
+                    <div class="user-projects-grid">
+                        <article class="user-project-card">
+                            <h2>Restauración del Teatro Municipal</h2>
+                            <p class="user-project-status">
+                                Estado: <span class="status-draft">Borrador</span>
+                            </p>
+                            <p class="user-project-text">
+                                Recuperación de un teatro histórico con reparaciones básicas,
+                                sonido e iluminación inicial para reabrirlo a la comunidad.
+                            </p>
+                            <div class="user-project-actions">
+                                <a href="form-project.html" class="btn-outline btn-sm">Editar</a>
+                                <button type="button" class="btn-ghost btn-sm">Eliminar</button>
+                            </div>
+                        </article>
+
+                        <article class="user-project-card">
+                            <h2>Cocina Comunitaria “Manos Unidas”</h2>
+                            <p class="user-project-status">
+                                Estado: <span class="status-active">Activo</span>
+                            </p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%;"></div>
+                            </div>
+                            <p class="user-project-text">
+                                Campaña para sostener una cocina comunitaria que entrega almuerzos
+                                diarios a familias del barrio La Esperanza.
+                            </p>
+                            <p class="user-project-meta">
+                                $8,000 de $10,000 · 120 aportantes
+                            </p>
+                            <div class="user-project-actions">
+                                <a href="user-project-detail.html" class="btn-outline btn-sm">
+                                    Ver recaudaciones
+                                </a>
+                                <button type="button" class="btn-ghost btn-sm">
+                                    Pausar campaña
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="user-project-card">
+                            <h2>Becas de Transporte Escolar Rural</h2>
+                            <p class="user-project-status">
+                                Estado: <span class="status-review">En revisión</span>
+                            </p>
+                            <p class="user-project-text">
+                                Propuesta para financiar el transporte de estudiantes que viajan
+                                más de 25 km diarios para asistir a la escuela secundaria regional.
+                            </p>
+                            <div class="user-project-actions">
+                                <a href="user-project-detail.html" class="btn-outline btn-sm">
+                                    Ver detalle
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2025 CrowFunNur. Todos los derechos reservados.</p>
+            <p class="footer-links">
+                <a href="index.html#como-funciona">Cómo Funciona</a>
+                <span>|</span>
+                <a href="index.html#contacto">Contacto</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

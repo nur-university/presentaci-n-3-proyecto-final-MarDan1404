@@ -1,0 +1,348 @@
+.header {
+    border-bottom: 1px solid var(--color-border);
+    background-color: var(--color-white);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    position: relative;
+}
+
+.admin-header-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.15rem;
+    padding: 0.75rem 1rem;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--color-primary);
+}
+
+.logo span {
+    color: var(--color-text);
+}
+
+.admin-title {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+.admin-right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.1rem;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-btn {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.menu-btn span {
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-text);
+}
+
+.nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    display: none;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0.6rem 1rem 0.8rem;
+    font-size: 0.9rem;
+    z-index: 40;
+}
+
+.nav a {
+    padding: 0.1rem 0;
+}
+
+.nav-auth {
+    color: var(--color-primary);
+}
+
+.nav-register {
+    border: 1px solid var(--color-primary);
+    padding: 0.3rem 0.7rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+}
+
+.menu-toggle:checked ~ .menu-btn + .nav,
+.menu-toggle:checked ~ .nav {
+    display: flex;
+}
+
+.search-container {
+    padding: 0.6rem 1rem;
+}
+
+.search-form {
+    width: 100%;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.55rem 0.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: var(--color-primary);
+}
+
+.nav-active {
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.nav-username {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin-left: 0.5rem;
+}
+
+.nav-logout {
+    border: 1px solid var(--color-border);
+    padding: 0.3rem 0.7rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.nav-logout:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+    .menu-btn {
+        display: none;
+    }
+
+    .nav {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: none;
+        padding: 0;
+        gap: 1.2rem;
+        background-color: transparent;
+    }
+
+    .search-container {
+        padding: 0.8rem 1rem 0.8rem;
+    }
+
+    .admin-header-inner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}
+
+.admin-review-page {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    background-color: var(--color-bg-light);
+}
+
+.admin-review-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.review-main {
+    flex: 2;
+}
+
+.review-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.9rem;
+}
+
+.review-field {
+    border: 1px solid var(--color-border);
+    background-color: #f9fafb;
+    padding: 0.55rem 0.75rem;
+    margin-bottom: 0.4rem;
+}
+
+.review-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    margin-bottom: 0.1rem;
+}
+
+.review-value {
+    font-size: 0.86rem;
+    color: var(--color-text);
+}
+
+.review-sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.review-actions-card,
+.review-history-card {
+    border: 1px solid var(--color-border);
+    background-color: var(--color-white);
+    border-radius: var(--radius-sm);
+    padding: 0.85rem 0.85rem 0.9rem;
+    font-size: 0.82rem;
+}
+
+.review-actions-card h2,
+.review-history-card h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.review-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.8rem;
+}
+
+.review-group label {
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.review-group textarea {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 0.45rem 0.5rem;
+    font-size: 0.82rem;
+    font-family: var(--font-base);
+    resize: vertical;
+    min-height: 80px;
+}
+
+.review-upload input[type="file"] {
+    font-size: 0.78rem;
+    padding: 0.25rem 0;
+}
+
+.review-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.4rem;
+}
+
+.btn-review {
+    width: 100%;
+    padding: 0.45rem 0.7rem;
+    font-size: 0.8rem;
+    border-radius: var(--radius-sm);
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.btn-review.approve {
+    background-color: #16a34a;
+}
+
+.btn-review.approve:hover {
+    background-color: #15803d;
+}
+
+.btn-review.observe {
+    background-color: #6b7280;
+}
+
+.btn-review.observe:hover {
+    background-color: #4b5563;
+}
+
+.btn-review.reject {
+    background-color: #dc2626;
+}
+
+.btn-review.reject:hover {
+    background-color: #b91c1c;
+}
+
+.review-note {
+    font-size: 0.72rem;
+    color: var(--color-text-muted);
+}
+
+.review-history-empty {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
+
+.review-history-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.8rem;
+    color: var(--color-text);
+}
+
+.review-history-list li {
+    margin-bottom: 0.35rem;
+}
+
+.review-history-date {
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-right: 0.2rem;
+}
+
+@media (min-width: 768px) {
+    .admin-review-layout {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .review-main {
+        max-width: 620px;
+    }
+}

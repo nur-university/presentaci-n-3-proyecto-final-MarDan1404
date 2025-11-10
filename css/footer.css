@@ -1,0 +1,28 @@
+.footer {
+    border-top: 1px solid var(--color-border);
+    padding: 1rem 0;
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    background-color: var(--color-white);
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+
+@media (min-width: 768px) {
+    .footer-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

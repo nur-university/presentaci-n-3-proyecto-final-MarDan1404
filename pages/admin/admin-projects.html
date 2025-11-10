@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CrowFunNur - Administración de Proyectos</title>
+
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+    <link rel="stylesheet" href="../../css/admin-projects.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container admin-header-inner">
+            <a class="logo" href="#">CrowFun<span>Nur</span></a>
+            <div class="admin-title">Panel de Admin</div>
+            <div class="admin-right">
+                <span class="admin-name">Admin</span>
+                <a href="logout.html" class="nav-logout">Cerrar sesión</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section admin-page">
+            <div class="container admin-layout">
+                <aside class="admin-sidebar">
+                    <a href="admin-projects.html" class="active">Administrar Proyectos</a>
+                    <a href="admin-users.html">Administrar Usuarios</a>
+                </aside>
+
+                <section class="admin-content">
+                    <header class="admin-content-header">
+                        <h1>Administración de Proyectos</h1>
+                    </header>
+
+                    <div class="admin-tabs">
+                        <button class="admin-tab active">En revisión</button>
+                        <button class="admin-tab">Observado</button>
+                        <button class="admin-tab">Rechazado</button>
+                        <button class="admin-tab">Aprobado</button>
+                    </div>
+
+                    <div class="admin-table-wrapper">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Proyecto</th>
+                                    <th>Usuario</th>
+                                    <th>Estado</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Proyecto 1</td>
+                                    <td>usuario1@test.com</td>
+                                    <td>En revisión</td>
+                                    <td class="admin-actions-cell">
+                                        <button class="btn-admin-sm btn-approve">Aprobar</button>
+                                        <button class="btn-admin-sm btn-observe">Observar</button>
+                                        <button class="btn-admin-sm btn-reject">Rechazar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Proyecto 2</td>
+                                    <td>usuario2@test.com</td>
+                                    <td>En revisión</td>
+                                    <td class="admin-actions-cell">
+                                        <button class="btn-admin-sm btn-approve">Aprobar</button>
+                                        <button class="btn-admin-sm btn-observe">Observar</button>
+                                        <button class="btn-admin-sm btn-reject">Rechazar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Proyecto 3</td>
+                                    <td>usuario3@test.com</td>
+                                    <td>Observado</td>
+                                    <td class="admin-actions-cell">
+                                        <button class="btn-admin-sm btn-details">Ver detalles</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Proyecto 4</td>
+                                    <td>usuario4@test.com</td>
+                                    <td>Aprobado</td>
+                                    <td class="admin-actions-cell">
+                                        <span class="admin-no-actions">-</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Proyecto 5</td>
+                                    <td>usuario5@test.com</td>
+                                    <td>Rechazado</td>
+                                    <td class="admin-actions-cell">
+                                        <a class="btn-admin-sm btn-details" href="admin-project-detail.html">Ver detalles</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Proyecto 6</td>
+                                    <td>usuario6@test.com</td>
+                                    <td>En revisión</td>
+                                    <td class="admin-actions-cell">
+                                        <button class="btn-admin-sm btn-approve">Aprobar</button>
+                                        <button class="btn-admin-sm btn-observe">Observar</button>
+                                        <button class="btn-admin-sm btn-reject">Rechazar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Si no hubiera proyectos, podrías mostrar algo como:
+          <p class="admin-empty">
+            No hay proyectos pendientes de revisión en este momento.
+          </p>
+          -->
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2025 CrowFunNur. Todos los derechos reservados.</p>
+            <p class="footer-links">
+                <a href="index.html#como-funciona">Cómo Funciona</a>
+                <span>|</span>
+                <a href="index.html#contacto">Contacto</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
