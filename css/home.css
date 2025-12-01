@@ -1,0 +1,155 @@
+.user-home {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    background-color: var(--color-bg-light);
+}
+
+.user-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.user-sidebar {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    display: flex;
+    flex-direction: column;
+}
+
+.user-sidebar a {
+    padding: 0.7rem 0.9rem;
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+}
+
+.user-sidebar a:last-child {
+    border-bottom: none;
+}
+
+.user-sidebar a.active {
+    background-color: var(--color-bg-light);
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.user-content {
+    flex: 1;
+}
+
+.user-content-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 1.2rem;
+}
+
+.user-content-header h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.btn-create {
+    align-self: flex-start;
+    font-size: 0.85rem;
+}
+
+.user-projects-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.user-project-card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 1rem;
+    font-size: 0.85rem;
+}
+
+.user-project-card h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.user-project-status {
+    font-size: 0.78rem;
+    margin-bottom: 0.4rem;
+    color: var(--color-text-muted);
+}
+
+.status-draft {
+    color: #6b7280;
+    font-weight: 600;
+}
+
+.status-active {
+    color: #15803d;
+    font-weight: 600;
+}
+
+.status-review {
+    color: #92400e;
+    font-weight: 600;
+}
+
+.user-project-text {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.6rem;
+}
+
+.user-project-meta {
+    font-size: 0.78rem;
+    margin: 0.2rem 0 0.6rem;
+    color: var(--color-text-muted);
+}
+
+.user-project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.btn-sm {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.78rem;
+}
+
+.btn-ghost {
+    border: 1px solid var(--color-border);
+    background-color: var(--color-white);
+    color: var(--color-text);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.btn-ghost:hover {
+    background-color: var(--color-bg-light);
+}
+
+@media (min-width: 768px) {
+    .user-layout {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .user-sidebar {
+        width: 220px;
+    }
+
+    .user-content-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .user-projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

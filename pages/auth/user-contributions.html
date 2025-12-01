@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CrowFunNur - Mis Aportes</title>
+
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+    <link rel="stylesheet" href="../../css/user-contributions.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">CrowFun<span>Nur</span></div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="menu-btn" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="nav">
+                <a href="user-projects.html">Explorar Proyectos</a>
+                <a href="home.html">Mis Proyectos</a>
+                <a href="user-saved.html">Proyectos Guardados</a>
+                <a href="user-contributions.html" class="nav-active">Mis Aportes</a>
+                <span class="nav-username">Usuario Demo</span>
+                <a href="logout.html" class="nav-logout">Cerrar sesión</a>
+            </nav>
+        </div>
+
+        <div class="container search-container">
+            <form class="search-form" action="#" method="get">
+                <input type="text" name="q" class="search-input" placeholder="Buscar por proyecto o fecha..." />
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section class="section user-contributions-page">
+            <div class="container user-contributions-layout">
+                <aside class="user-sidebar">
+                    <a href="user-projects.html">Explorar Proyectos</a>
+                    <a href="home.html">Mis Proyectos</a>
+                    <a href="user-saved.html">Proyectos Guardados</a>
+                    <a href="user-contributions.html" class="active">Mis Aportes</a>
+                </aside>
+
+                <section class="user-contributions-content">
+                    <header class="uc-header">
+                        <h1>Mi historial de aportes</h1>
+                        <p>
+                            Consulta los aportes que realizaste en CrowFunNur. Los datos son ficticios
+                            y están pensados para la maqueta del sistema.
+                        </p>
+                    </header>
+
+                    <div class="contributions-table-wrapper">
+                        <table class="contributions-table">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Proyecto</th>
+                                    <th>Monto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>22/09/2025</td>
+                                    <td>Laboratorio de Ciencia Móvil</td>
+                                    <td>$75.00</td>
+                                </tr>
+                                <tr>
+                                    <td>21/09/2025</td>
+                                    <td>Jubilación de Molina</td>
+                                    <td>$200.00</td>
+                                </tr>
+                                <tr>
+                                    <td>20/09/2025</td>
+                                    <td>Eco-Granja Urbana</td>
+                                    <td>$50.00</td>
+                                </tr>
+                                <tr>
+                                    <td>18/09/2025</td>
+                                    <td>Huerta Comunitaria “Sembrando Futuro”</td>
+                                    <td>$125.00</td>
+                                </tr>
+                                <tr>
+                                    <td>16/09/2025</td>
+                                    <td>Creación de NUR 2</td>
+                                    <td>$30.00</td>
+                                </tr>
+                                <tr>
+                                    <td>15/09/2025</td>
+                                    <td>Restauración del Teatro Municipal</td>
+                                    <td>$100.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Mensaje alternativo si no hay aportes (para usar si lo necesitas)
+          <p class="no-contributions">
+            Aún no has realizado aportes. Explora proyectos y apoya las iniciativas
+            que más se alineen con tus valores.
+          </p>
+          -->
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2025 CrowFunNur. Todos los derechos reservados.</p>
+            <p class="footer-links">
+                <a href="index.html#como-funciona">Cómo Funciona</a>
+                <span>|</span>
+                <a href="index.html#contacto">Contacto</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

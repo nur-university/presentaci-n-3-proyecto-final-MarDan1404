@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CrowFunNur - Página Principal</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <a class="logo" href="#">CrowFun<span>Nur</span></a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="menu-btn" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="nav">
+                <a href="pages/projects.html">Explorar Proyectos</a>
+                <a href="#sobre-nosotros">Sobre Nosotros</a>
+                <a href="#como-funciona">Cómo Funciona</a>
+                <a href="#contacto">Contacto</a>
+                <a href="pages/login.html" class="nav-auth">Iniciar Sesión</a>
+                <a href="pages/register.html" class="nav-register">Registrarse</a>
+            </nav>
+        </div>
+
+        <div class="container search-container">
+            <form class="search-form" action="#" method="get">
+                <input type="text" name="q" class="search-input" placeholder="Buscar proyectos..." />
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <div class="hero-banner" style="background-image: url('img/banner.png');">
+                    <div class="hero-overlay">
+                        <p class="hero-title">PROYECTOS QUE IMPULSAN CAMBIOS REALES</p>
+                        <p class="hero-subtitle">
+                            CrowFunNur es la plataforma para conectar ideas innovadoras con personas
+                            dispuestas a apoyarlas de forma clara, segura y colaborativa.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#proyectos" class="btn-primary">Comienza a financiar</a>
+                            <a href="pages/projects.html" class="btn-outline">Explorar proyectos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="section">
+            <div class="container">
+                <h2 class="section-title">Proyectos destacados</h2>
+
+                <div class="projects-grid">
+                    <a href="pages/project-detail.html" class="project-link">
+                        <article class="project-card">
+                            <div class="project-image">
+                                <img src="img/laboratorio.jpg" alt="Laboratorio de Ciencia Móvil" />
+                            </div>
+                            <h3>Laboratorio de Ciencia Móvil para Escuelas Rurales</h3>
+                            <p class="project-desc">
+                                Un laboratorio itinerante equipado con material científico básico
+                                para que estudiantes de comunidades alejadas puedan realizar
+                                experimentos y descubrir la ciencia de forma práctica.
+                            </p>
+                            <div class="project-info">
+                                <p>Recaudado: <strong>$38,500</strong></p>
+                                <p>Meta: <strong>$50,000</strong></p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 77%;"></div>
+                            </div>
+                            <div class="project-meta-bottom">
+                                <span>77% completado · 9 días restantes</span>
+                                <span class="btn-small">Ver proyecto</span>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="pages/project-detail.html" class="project-link">
+                        <article class="project-card">
+                            <div class="project-image">
+                                <img src="img/huerta.jpg" alt="Huerta Urbana Comunitaria" />
+                            </div>
+                            <h3>Huerta Urbana Comunitaria “Sembrando Futuro”</h3>
+                            <p class="project-desc">
+                                Creación de una huerta urbana para producir alimentos frescos,
+                                ofrecer talleres de cultivo y fortalecer el lazo comunitario del barrio.
+                            </p>
+                            <div class="project-info">
+                                <p>Recaudado: <strong>$12,400</strong></p>
+                                <p>Meta: <strong>$20,000</strong></p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 62%;"></div>
+                            </div>
+                            <div class="project-meta-bottom">
+                                <span>62% completado · 18 días restantes</span>
+                                <span class="btn-small">Ver proyecto</span>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="pages/project-detail.html" class="project-link">
+                        <article class="project-card">
+                            <div class="project-image">
+                                <img src="img/tutorias.jpg" alt="Tutorías Gratuitas en Línea" />
+                            </div>
+                            <h3>Plataforma de Tutorías Gratuitas para Secundaria</h3>
+                            <p class="project-desc">
+                                Red de voluntarios que brindan apoyo en línea en materias clave para
+                                estudiantes con dificultades de acceso a acompañamiento escolar.
+                            </p>
+                            <div class="project-info">
+                                <p>Recaudado: <strong>$9,800</strong></p>
+                                <p>Meta: <strong>$15,000</strong></p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 65%;"></div>
+                            </div>
+                            <div class="project-meta-bottom">
+                                <span>65% completado · 22 días restantes</span>
+                                <span class="btn-small">Ver proyecto</span>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-nosotros" class="section section-gray">
+            <div class="container">
+                <h2 class="section-title">Sobre CrowFunNur</h2>
+                <p class="text-basic">
+                    CrowFunNur es una plataforma académica de ejemplo diseñada para simular
+                    campañas de financiamiento colectivo. Permite crear, revisar y apoyar
+                    proyectos con una estructura clara y transparente, ideal para prácticas
+                    universitarias y proyectos de aprendizaje.
+                </p>
+            </div>
+        </section>
+
+        <section id="como-funciona" class="section">
+            <div class="container">
+                <h2 class="section-title">¿Cómo funciona?</h2>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <p>Crea una cuenta como usuario o representante de un proyecto.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <p>Registra tu proyecto con imagen, categoría, meta y fecha límite.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <p>Un administrador revisa tu propuesta y aprueba la publicación.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        <p>Comparte tu campaña, recibe aportes y publica actualizaciones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section section-gray">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <p class="text-basic">
+                    ¿Dudas sobre la plataforma o el estado de un proyecto? Escríbenos a
+                    <strong>soporte@crowfunnur.com</strong>.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2025 CrowFunNur. Todos los derechos reservados.</p>
+            <p class="footer-links">
+                <a href="#como-funciona">Cómo Funciona</a>
+                <span>|</span>
+                <a href="#contacto">Contacto</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

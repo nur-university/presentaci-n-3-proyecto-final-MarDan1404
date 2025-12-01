@@ -1,0 +1,148 @@
+.header {
+    border-bottom: 1px solid var(--color-border);
+    background-color: var(--color-white);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+    position: relative;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--color-primary);
+}
+
+.logo span {
+    color: var(--color-text);
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-btn {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.menu-btn span {
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-text);
+}
+
+.nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    display: none;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0.6rem 1rem 0.8rem;
+    font-size: 0.9rem;
+    z-index: 40;
+}
+
+.nav a {
+    padding: 0.1rem 0;
+}
+
+.nav-auth {
+    color: var(--color-primary);
+}
+
+.nav-register {
+    border: 1px solid var(--color-primary);
+    padding: 0.3rem 0.7rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+}
+
+.menu-toggle:checked ~ .menu-btn + .nav,
+.menu-toggle:checked ~ .nav {
+    display: flex;
+}
+
+
+.search-container {
+    padding: 0.6rem;
+}
+
+.search-form {
+    width: 100%;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.55rem 0.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.search-input:focus {
+    border-color: var(--color-primary);
+}
+
+.nav-active {
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.nav-username {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin-left: 0.5rem;
+}
+
+.nav-logout {
+    border: 1px solid var(--color-border);
+    padding: 0.3rem 0.7rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+}
+
+.nav-logout:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-primary);
+}
+
+
+@media (min-width: 768px) {
+    .menu-btn {
+        display: none;
+    }
+
+    .nav {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: none;
+        padding: 0;
+        gap: 1.2rem;
+        background-color: transparent;
+    }
+
+    .search-container {
+        padding-bottom: 0.8rem;
+    }
+}

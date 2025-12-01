@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CrowFunNur - Proyectos Guardados</title>
+
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+    <link rel="stylesheet" href="../../css/user-saved.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">CrowFun<span>Nur</span></div>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="menu-btn" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="nav">
+                <a href="projects.html">Explorar Proyectos</a>
+                <a href="user-projects.html">Mis Proyectos</a>
+                <a href="user-saved.html" class="nav-active">Proyectos Guardados</a>
+                <a href="user-contributions.html">Mis Aportes</a>
+                <span class="nav-username">Usuario Demo</span>
+                <a href="logout.html" class="nav-logout">Cerrar sesión</a>
+            </nav>
+        </div>
+
+        <div class="container search-container">
+            <form class="search-form" action="#" method="get">
+                <input type="text" name="q" class="search-input"
+                    placeholder="Buscar dentro de tus proyectos guardados..." />
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section class="section user-saved-page">
+            <div class="container user-saved-layout">
+                <aside class="user-sidebar">
+                    <a href="user-projects.html">Explorar Proyectos</a>
+                    <a href="home.html">Mis Proyectos</a>
+                    <a href="user-saved.html" class="active">Proyectos Guardados</a>
+                    <a href="user-contributions.html">Mis Aportes</a>
+                </aside>
+
+                <section class="user-saved-content">
+                    <header class="user-saved-header">
+                        <h1>Proyectos Guardados</h1>
+                        <p>
+                            Estos son los proyectos que marcaste para seguir de cerca.
+                            Puedes ver el detalle completo o eliminarlos de tu lista.
+                        </p>
+                    </header>
+
+                    <div class="projects-grid">
+                        <article class="project-card saved-card">
+                            <div class="saved-label">Guardado</div>
+                            <div class="project-image">
+                                <img src="../../img/laboratorio.jpg" alt="Laboratorio de Ciencia Móvil" />
+                            </div>
+                            <h3>Laboratorio de Ciencia Móvil para Escuelas Rurales</h3>
+                            <p class="project-desc">
+                                Talleres científicos itinerantes para estudiantes de escuelas rurales sin laboratorio.
+                            </p>
+                            <div class="project-info">
+                                <p>Recaudado: <strong>$7,500</strong></p>
+                                <p>Meta: <strong>$10,000</strong></p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%;"></div>
+                            </div>
+                            <div class="saved-meta-bottom">
+                                <a href="user-project-detail.html" class="btn-small">Ver proyecto</a>
+                                <button type="button" class="btn-ghost btn-sm">
+                                    Quitar de guardados
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="project-card saved-card">
+                            <div class="saved-label">Guardado</div>
+                            <div class="project-image">
+                                <img src="../../img/huerta.jpg" alt="Huerta Urbana Comunitaria" />
+                            </div>
+                            <h3>Huerta Urbana Comunitaria “Sembrando Futuro”</h3>
+                            <p class="project-desc">
+                                Producción local de alimentos frescos y talleres de cultivo
+                                para familias del barrio.
+                            </p>
+                            <div class="project-info">
+                                <p>Recaudado: <strong>$5,000</strong></p>
+                                <p>Meta: <strong>$7,500</strong></p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 66%;"></div>
+                            </div>
+                            <div class="saved-meta-bottom">
+                                <a href="user-project-detail.html" class="btn-small">Ver proyecto</a>
+                                <button type="button" class="btn-ghost btn-sm">
+                                    Quitar de guardados
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="project-card saved-card">
+                            <div class="saved-label">Guardado</div>
+                            <div class="project-image">
+                                <img src="../../img/tutorias.jpg" alt="Tutorías Gratuitas para Secundaria" />
+                            </div>
+                            <h3>Tutorías Gratuitas para Secundaria</h3>
+                            <p class="project-desc">
+                                Plataforma de apoyo escolar en línea con voluntarios para estudiantes de escuelas
+                                públicas.
+                            </p>
+                            <div class="project-info">
+                                <p>Recaudado: <strong>$3,200</strong></p>
+                                <p>Meta: <strong>$6,000</strong></p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 53%;"></div>
+                            </div>
+                            <div class="saved-meta-bottom">
+                                <a href="user-project-detail.html" class="btn-small">Ver proyecto</a>
+                                <button type="button" class="btn-ghost btn-sm">
+                                    Quitar de guardados
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!--
+          <p class="no-saved-message">
+            Aún no has guardado ningún proyecto. Explora campañas y utiliza la opción
+            “Guardar” para seguir las que más te interesen.
+          </p>
+          -->
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2025 CrowFunNur. Todos los derechos reservados.</p>
+            <p class="footer-links">
+                <a href="index.html#como-funciona">Cómo Funciona</a>
+                <span>|</span>
+                <a href="index.html#contacto">Contacto</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

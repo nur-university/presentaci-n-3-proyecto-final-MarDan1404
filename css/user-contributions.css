@@ -1,0 +1,108 @@
+.user-contributions-page {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    background-color: var(--color-bg-light);
+}
+
+.user-contributions-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.user-sidebar {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    display: flex;
+    flex-direction: column;
+}
+
+.user-sidebar a {
+    padding: 0.7rem 0.9rem;
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+}
+
+.user-sidebar a:last-child {
+    border-bottom: none;
+}
+
+.user-sidebar a.active {
+    background-color: var(--color-bg-light);
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.user-contributions-content {
+    flex: 1;
+}
+
+.uc-header {
+    margin-bottom: 1.2rem;
+}
+
+.uc-header h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.uc-header p {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    max-width: 520px;
+}
+
+.contributions-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+}
+
+.contributions-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+.contributions-table thead {
+    background-color: #e5e7eb;
+}
+
+.contributions-table th,
+.contributions-table td {
+    padding: 0.6rem 0.8rem;
+    border-bottom: 1px solid var(--color-border);
+    text-align: left;
+}
+
+.contributions-table th {
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.contributions-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.no-contributions {
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+@media (min-width: 768px) {
+    .user-contributions-layout {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .user-sidebar {
+        width: 220px;
+    }
+}

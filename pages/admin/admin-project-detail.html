@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CrowFunNur - Revisión de Proyecto</title>
+
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../../css/admin-project-detail.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container admin-header-inner">
+            <div class="logo">CrowFun<span>Nur</span></div>
+            <div class="admin-title">Panel de Admin</div>
+            <div class="admin-right">
+                <span class="admin-name">Admin</span>
+                <a href="logout.html" class="nav-logout">Cerrar sesión</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section admin-review-page">
+            <div class="container admin-review-layout">
+                <section class="review-main">
+                    <h1 class="review-title">Revisión de Proyecto: Proyecto 1</h1>
+
+                    <div class="review-field">
+                        <div class="review-label">Título</div>
+                        <div class="review-value">Título del Proyecto 1</div>
+                    </div>
+
+                    <div class="review-field">
+                        <div class="review-label">Categoría</div>
+                        <div class="review-value">Categoría Ejemplo</div>
+                    </div>
+
+                    <div class="review-field">
+                        <div class="review-label">Descripción</div>
+                        <div class="review-value">
+                            Esta es la descripción del proyecto que el usuario ha enviado para su revisión.
+                            Explica el objetivo, los beneficiarios y el uso propuesto de los fondos.
+                        </div>
+                    </div>
+
+                    <div class="review-field">
+                        <div class="review-label">Meta</div>
+                        <div class="review-value">$15,000</div>
+                    </div>
+
+                    <div class="review-field">
+                        <div class="review-label">Fecha Límite</div>
+                        <div class="review-value">2025-12-31</div>
+                    </div>
+
+                    <div class="review-field">
+                        <div class="review-label">Documentación adjunta</div>
+                        <div class="review-value">
+                            Presupuesto estimado, carta de la organización y cronograma (datos ficticios).
+                        </div>
+                    </div>
+                </section>
+
+                <aside class="review-sidebar">
+                    <div class="review-actions-card">
+                        <h2>Acciones</h2>
+
+                        <div class="review-group">
+                            <label for="admin-comment">Añadir comentario / observación</label>
+                            <textarea id="admin-comment" name="admin-comment" rows="4"
+                                placeholder="Escribe aquí las correcciones, motivos de observación o comentarios para el usuario."></textarea>
+                        </div>
+
+                        <div class="review-group">
+                            <label for="admin-file">Adjuntar archivo de corrección</label>
+                            <div class="review-upload">
+                                <input type="file" id="admin-file" name="admin-file" />
+                            </div>
+                        </div>
+
+                        <div class="review-buttons">
+                            <button type="button" class="btn-review approve">
+                                Aprobar Proyecto
+                            </button>
+                            <button type="button" class="btn-review observe">
+                                Marcar como Observado
+                            </button>
+                            <button type="button" class="btn-review reject">
+                                Rechazar Proyecto
+                            </button>
+                        </div>
+
+                        <p class="review-note">
+                            Estas acciones son solo representativas en la maqueta. En la implementación real
+                            se deberá registrar la decisión, el comentario y la fecha.
+                        </p>
+                    </div>
+
+                    <div class="review-history-card">
+                        <h3>Historial de Observaciones</h3>
+                        <p class="review-history-empty">
+                            Aún no hay observaciones registradas para este proyecto.
+                        </p>
+
+                        <!-- Ejemplo (deja comentado):
+            <ul class="review-history-list">
+              <li>
+                <span class="review-history-date">05/03/2025</span>
+                Ajustar el detalle del presupuesto y aclarar el número de beneficiarios.
+              </li>
+            </ul>
+            -->
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2025 CrowFunNur. Todos los derechos reservados.</p>
+            <p class="footer-links">
+                <a href="index.html#como-funciona">Cómo Funciona</a>
+                <span>|</span>
+                <a href="index.html#contacto">Contacto</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

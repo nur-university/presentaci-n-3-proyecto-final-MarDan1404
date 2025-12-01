@@ -1,0 +1,120 @@
+.user-saved-page {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    background-color: var(--color-bg-light);
+}
+
+.user-saved-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.user-sidebar {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    display: flex;
+    flex-direction: column;
+}
+
+.user-sidebar a {
+    padding: 0.7rem 0.9rem;
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+}
+
+.user-sidebar a:last-child {
+    border-bottom: none;
+}
+
+.user-sidebar a.active {
+    background-color: var(--color-bg-light);
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.user-saved-content {
+    flex: 1;
+}
+
+.user-saved-header {
+    margin-bottom: 1.2rem;
+}
+
+.user-saved-header h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.user-saved-header p {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    max-width: 520px;
+}
+
+.saved-card {
+    position: relative;
+}
+
+.saved-label {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    padding: 0.15rem 0.5rem;
+    font-size: 0.7rem;
+    border-radius: var(--radius-sm);
+    background-color: #eff6ff;
+    color: var(--color-primary);
+}
+
+.saved-meta-bottom {
+    margin-top: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.78rem;
+}
+
+.btn-sm {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.78rem;
+}
+
+.btn-ghost {
+    border: 1px solid var(--color-border);
+    background-color: var(--color-white);
+    color: var(--color-text);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.btn-ghost:hover {
+    background-color: var(--color-bg-light);
+}
+
+.no-saved-message {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+@media (min-width: 768px) {
+    .user-saved-layout {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .user-sidebar {
+        width: 220px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

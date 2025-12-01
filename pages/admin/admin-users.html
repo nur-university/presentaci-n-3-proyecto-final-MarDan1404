@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CrowFunNur - Administrar Usuarios Administradores</title>
+
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+    <link rel="stylesheet" href="../../css/admin-users.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container admin-header-inner">
+            <div class="logo">CrowFun<span>Nur</span></div>
+            <div class="admin-title">Panel de Admin</div>
+            <div class="admin-right">
+                <span class="admin-name">Admin</span>
+                <a href="logout.html" class="nav-logout">Cerrar sesión</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section admin-page">
+            <div class="container admin-layout">
+                <aside class="admin-sidebar">
+                    <a href="admin-projects.html">Administrar Proyectos</a>
+                    <a href="admin-users.html" class="active">Administrar Usuarios</a>
+                </aside>
+
+                <section class="admin-content">
+                    <div class="admin-content-header admin-users-header">
+                        <h1>Administrar Usuarios Administradores</h1>
+                        <a href="#" class="btn-admin-primary">Crear Administrador</a>
+                    </div>
+
+                    <div class="admin-table-wrapper">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Correo</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Admin Principal</td>
+                                    <td>admin1@crowfunnur.com</td>
+                                    <td class="admin-actions-cell">
+                                        <button class="btn-admin-sm btn-details">Editar</button>
+                                        <button class="btn-admin-sm btn-reject">Eliminar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Admin Secundario</td>
+                                    <td>admin2@crowfunnur.com</td>
+                                    <td class="admin-actions-cell">
+                                        <button class="btn-admin-sm btn-details">Editar</button>
+                                        <button class="btn-admin-sm btn-reject">Eliminar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Soporte Regional</td>
+                                    <td>soporte@crowfunnur.com</td>
+                                    <td class="admin-actions-cell">
+                                        <button class="btn-admin-sm btn-details">Editar</button>
+                                        <button class="btn-admin-sm btn-reject">Eliminar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Mensaje alternativo si no hay admins:
+          <p class="admin-empty">
+            No hay usuarios administradores registrados. Crea uno nuevo para gestionar la plataforma.
+          </p>
+          -->
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2025 CrowFunNur. Todos los derechos reservados.</p>
+            <p class="footer-links">
+                <a href="index.html#como-funciona">Cómo Funciona</a>
+                <span>|</span>
+                <a href="index.html#contacto">Contacto</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
